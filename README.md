@@ -1,4 +1,4 @@
-<img src="assets/hero.svg" width="100%" alt="Build. Break. Prove. — security assessment report cover for Guerfi Ahmed Yacine">
+<img src="assets/hero.svg" width="100%" alt="Light editorial security assessment cover: Build. Break. Prove. — Guerfi Ahmed Yacine">
 
 > **Field report.** I build the vulnerable system, exploit it, instrument the
 > detection, then prove the fix under load. The repositories below are the
