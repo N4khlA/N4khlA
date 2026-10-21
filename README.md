@@ -29,10 +29,10 @@ approach:    build → exploit → detect → prove the fix
 status:      OPEN_TO_INTERNSHIPS  # pentest · AppSec · SOC
 ```
 
-- 🛡️ I work where **offensive security, detection and software engineering** meet
-- 🔬 Every project ships with a harness, tests or a benchmark: claims that can fail
-- 🎯 Currently studying **detection engineering, iOS internals** and ML that holds up outside a notebook
-- 📫 Hiring a security intern? **[ay.guerfi@esi-sba.dz](mailto:ay.guerfi@esi-sba.dz)**
+- I work where **offensive security, detection and software engineering** meet
+- Every project ships with a harness, tests or a benchmark: claims that can fail
+- Currently studying **detection engineering, iOS internals** and ML that holds up outside a notebook
+- Hiring a security intern? **[ay.guerfi@esi-sba.dz](mailto:ay.guerfi@esi-sba.dz)**
 
 <br/>
 
@@ -41,7 +41,7 @@ status:      OPEN_TO_INTERNSHIPS  # pentest · AppSec · SOC
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h3><a href="https://github.com/N4khlA/Race_condition_exploiter">⚔️ Race Condition Exploiter</a></h3>
+      <h3><a href="https://github.com/N4khlA/Race_condition_exploiter">Race Condition Exploiter</a></h3>
       <sub><code>OFFENSIVE / WEB</code></sub>
       <p>A full TOCTOU lab: a shop with <b>5 real race bugs</b>, an exploit harness with <b>4 concurrency strategies</b> (incl. HTTP/2 multiplexing), <b>3 detectors</b> and DB-level fixes benchmarked for exploit rate vs latency.</p>
       <img src="https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688"/>
@@ -50,7 +50,7 @@ status:      OPEN_TO_INTERNSHIPS  # pentest · AppSec · SOC
       <img src="https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ED"/>
     </td>
     <td width="33%" valign="top">
-      <h3><a href="https://github.com/N4khlA/AI-_threat_hunting">🧠 ML Intrusion Detection</a></h3>
+      <h3><a href="https://github.com/N4khlA/AI-_threat_hunting">ML Intrusion Detection</a></h3>
       <sub><code>DEFENSIVE / ML</code></sub>
       <p>End-to-end IDS on UNSW-NB15: Random Forest <b>(macro F1 0.948)</b> vs BiLSTM <b>(AUC 0.998)</b> with a McNemar test, FastAPI serving, live monitoring and a retrain guard. <b>49 tests.</b></p>
       <img src="https://img.shields.io/badge/scikit--learn-0d1117?style=flat-square&logo=scikitlearn&logoColor=F7931E"/>
@@ -58,9 +58,9 @@ status:      OPEN_TO_INTERNSHIPS  # pentest · AppSec · SOC
       <img src="https://img.shields.io/badge/Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B"/>
     </td>
     <td width="33%" valign="top">
-      <h3><a href="https://github.com/N4khlA/MobileApp_SecAnalyzer">📱 masa</a></h3>
+      <h3><a href="https://github.com/N4khlA/MobileApp_SecAnalyzer">masa</a></h3>
       <sub><code>MOBILE APPSEC</code></sub>
-      <p>Mobile App Security Analyzer: <b>78 rules</b> mapped to the OWASP Mobile Top 10, hand-written AXML / plist / DEX / ELF / Mach-O parsers, <b>SARIF output</b> and a <code>--fail-on</code> CI gate. Zero dependencies.</p>
+      <p>Mobile App Security Analyzer: <b>78 rules</b> across the OWASP Mobile Top 10, hand-written AXML / plist / DEX / ELF / Mach-O parsers, <b>SARIF output</b> and a CI gate. Never drops a file silently: unreadable input is reported and <code>--strict</code> fails the build. <b>67 tests.</b></p>
       <img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB"/>
       <img src="https://img.shields.io/badge/OWASP-0d1117?style=flat-square&logo=owasp&logoColor=white"/>
       <img src="https://img.shields.io/badge/GitHub_Actions-0d1117?style=flat-square&logo=githubactions&logoColor=2088FF"/>
@@ -96,7 +96,7 @@ status:      OPEN_TO_INTERNSHIPS  # pentest · AppSec · SOC
 
 ```mermaid
 flowchart LR
-    R["🔎 Recon"] --> B["🏗️ Build"] --> X["⚔️ Exploit"] --> D["🚨 Detect"] --> F["🔧 Fix"] --> V["✅ Verify"]
+    R["Recon"] --> B["Build"] --> X["Exploit"] --> D["Detect"] --> F["Fix"] --> V["Verify"]
     V -.-> R
     style X fill:#3b0a0a,stroke:#ff4d4d,color:#ffffff
     style D fill:#0d1117,stroke:#ff4d4d,color:#ffffff
@@ -123,7 +123,7 @@ flowchart LR
 
 <div align="center">
 
-<sub>🔐 Offensive tooling here is for authorised education and research, run in isolated labs.</sub>
+<sub>Offensive tooling here is for authorised education and research, run in isolated labs.</sub>
 
 </div>
 
