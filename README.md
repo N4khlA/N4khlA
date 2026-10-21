@@ -1,4 +1,5 @@
-`SEC-ASSESSMENT // GUERFI-A-Y` · `CLASSIFICATION: PUBLIC` · `REV 2026.10`
+⬛ `SEC-ASSESSMENT // GUERFI-A-Y` · `PUBLIC` · `REV 2026.10`\
+🟥 `AVAILABLE FOR INTERNSHIP` · pentest / AppSec / SOC
 
 # Guerfi Ahmed Yacine
 
@@ -7,7 +8,6 @@
 | FIELD | VALUE |
 |---|---|
 | **Focus** | Offensive security · applied ML · mobile AppSec |
-| **Status** | `AVAILABLE` — internship in pentest, AppSec or SOC/detection |
 | **Base** | Sidi Bel Abbès, Algeria |
 | **Graduation** | 2027 |
 
