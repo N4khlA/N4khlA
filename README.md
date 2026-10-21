@@ -21,11 +21,12 @@
 
 ```yaml
 name:        Guerfi Ahmed Yacine
-role:        Cyber Security Engineering Student (State Engineer + Master's)
-school:      ESI Sidi Bel Abbès, Algeria, class of 2027
-focus:       [offensive security, detection engineering, mobile AppSec]
-approach:    build the vulnerable system → exploit it → detect it → prove the fix
-status:      OPEN_TO_INTERNSHIPS   # pentest · AppSec · SOC / detection
+role:        Cyber Security Engineering Student
+degree:      State Engineer + Master's
+school:      ESI Sidi Bel Abbès · class of 2027
+focus:       [offensive, detection, mobile AppSec]
+approach:    build → exploit → detect → prove the fix
+status:      OPEN_TO_INTERNSHIPS  # pentest · AppSec · SOC
 ```
 
 - 🛡️ I work where **offensive security, detection and software engineering** meet
