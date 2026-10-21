@@ -1,154 +1,129 @@
-`SEC-ASSESSMENT // GUERFI-A-Y` · `PUBLIC` · `REV 2026.10` · `AVAILABLE FOR INTERNSHIP`
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,55:3b0a0a,100:ff4d4d&height=200&section=header&text=Guerfi%20Ahmed%20Yacine&fontSize=44&fontColor=ffffff&fontAlignY=36&desc=Cyber%20Security%20Engineering%20Student%20%C2%B7%20ESI-SBA&descSize=16&descAlignY=58&descAlign=50&animation=fadeIn" width="100%" alt="Guerfi Ahmed Yacine, Cyber Security Engineering Student at ESI-SBA"/>
 
-# Guerfi Ahmed Yacine
+<div align="center">
 
-**Cyber security engineering student at ESI Sidi Bel Abbès · class of 2027**
+<a href="https://n4khla.github.io">
+  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=FF4D4D&center=true&vCenter=true&width=640&height=40&lines=I+break+systems+to+learn+how+to+defend+them;Pentest+%C2%B7+AppSec+%C2%B7+Detection+Engineering;Race+conditions%2C+ML+IDS%2C+mobile+static+analysis;Open+to+internships+%E2%80%94+2026%2F27" alt="I break systems to learn how to defend them. Pentest, AppSec, Detection Engineering. Open to internships 2026/27."/>
+</a>
 
-| FIELD | VALUE |
-|---|---|
-| **Focus** | Offensive security · applied ML · mobile AppSec |
-| **Base** | Sidi Bel Abbès, Algeria |
-| **Graduation** | 2027 |
+<br/>
 
-> **Field report.** I build the vulnerable system, exploit it, instrument the
-> detection, then prove the fix under load. The repositories below are the
-> evidence, not a skills list.
+<a href="https://n4khla.github.io"><img src="https://img.shields.io/badge/Portfolio-n4khla.github.io-ff4d4d?style=for-the-badge&logo=hackthebox&logoColor=white&labelColor=0d1117" alt="Portfolio"/></a>
+<a href="https://www.linkedin.com/in/guerfi-ahmed-yacine-6831b32b8/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn"/></a>
+<a href="mailto:ay.guerfi@esi-sba.dz?subject=Internship%20opportunity"><img src="https://img.shields.io/badge/Email-ay.guerfi%40esi--sba.dz-c9d1d9?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>
+<a href="https://n4khla.github.io/Guerfi_Ahmed_Yacine_CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-ff4d4d?style=for-the-badge&logo=readdotcv&logoColor=white&labelColor=0d1117" alt="CV (PDF)"/></a>
 
-`01` [Summary](#summary) · `02` [Engagements](#engagements) · `03` [Tradecraft](#tradecraft) · `04` [Field notes](#field-notes) · `05` [Currently](#currently) · `06` [Contact](#contact)
+</div>
 
----
+<br/>
 
-## Summary
+## `> whoami`
 
-I'm a final-year cyber security engineering student at **ESI Sidi Bel Abbès**,
-graduating in **2027**. I work where offensive security, detection engineering
-and software engineering meet: race conditions, mobile attack surfaces, and ML
-detectors that have to survive real traffic.
+```yaml
+name:        Guerfi Ahmed Yacine
+role:        Cyber Security Engineering Student (State Engineer + Master's)
+school:      ESI Sidi Bel Abbès, Algeria, class of 2027
+focus:       [offensive security, detection engineering, mobile AppSec]
+approach:    build the vulnerable system → exploit it → detect it → prove the fix
+status:      OPEN_TO_INTERNSHIPS   # pentest · AppSec · SOC / detection
+```
 
-I care about claims that can be checked. Every project here ships with a harness,
-a test suite, a benchmark or a CI gate — something that can fail and prove the
-work is real.
+- 🛡️ I work where **offensive security, detection and software engineering** meet
+- 🔬 Every project ships with a harness, tests or a benchmark: claims that can fail
+- 🎯 Currently studying **detection engineering, iOS internals** and ML that holds up outside a notebook
+- 📫 Hiring a security intern? **[ay.guerfi@esi-sba.dz](mailto:ay.guerfi@esi-sba.dz)**
 
-> **Rules of engagement.** Offensive work stays in isolated labs. Datasets are
-> public or synthetic. If a claim cannot be reproduced, it does not go on this page.
+<br/>
 
----
+## `> ls ./engagements`
 
-## Engagements
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/N4khlA/Race_condition_exploiter">⚔️ Race Condition Exploiter</a></h3>
+      <sub><code>OFFENSIVE / WEB</code></sub>
+      <p>A full TOCTOU lab: a shop with <b>5 real race bugs</b>, an exploit harness with <b>4 concurrency strategies</b> (incl. HTTP/2 multiplexing), <b>3 detectors</b> and DB-level fixes benchmarked for exploit rate vs latency.</p>
+      <img src="https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688"/>
+      <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169E1"/>
+      <img src="https://img.shields.io/badge/Redis-0d1117?style=flat-square&logo=redis&logoColor=FF4438"/>
+      <img src="https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ED"/>
+    </td>
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/N4khlA/AI-_threat_hunting">🧠 ML Intrusion Detection</a></h3>
+      <sub><code>DEFENSIVE / ML</code></sub>
+      <p>End-to-end IDS on UNSW-NB15: Random Forest <b>(macro F1 0.948)</b> vs BiLSTM <b>(AUC 0.998)</b> with a McNemar test, FastAPI serving, live monitoring and a retrain guard. <b>49 tests.</b></p>
+      <img src="https://img.shields.io/badge/scikit--learn-0d1117?style=flat-square&logo=scikitlearn&logoColor=F7931E"/>
+      <img src="https://img.shields.io/badge/TensorFlow-0d1117?style=flat-square&logo=tensorflow&logoColor=FF6F00"/>
+      <img src="https://img.shields.io/badge/Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B"/>
+    </td>
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/N4khlA/MobileApp_SecAnalyzer">📱 masa</a></h3>
+      <sub><code>MOBILE APPSEC</code></sub>
+      <p>Mobile App Security Analyzer: <b>78 rules</b> mapped to the OWASP Mobile Top 10, hand-written AXML / plist / DEX / ELF / Mach-O parsers, <b>SARIF output</b> and a <code>--fail-on</code> CI gate. Zero dependencies.</p>
+      <img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB"/>
+      <img src="https://img.shields.io/badge/OWASP-0d1117?style=flat-square&logo=owasp&logoColor=white"/>
+      <img src="https://img.shields.io/badge/GitHub_Actions-0d1117?style=flat-square&logo=githubactions&logoColor=2088FF"/>
+    </td>
+  </tr>
+</table>
 
-| ID | Engagement | Domain | Evidence | State |
-|---|---|---|---|---|
-| `F-01` | **[Race Condition Exploiter](https://github.com/N4khlA/Race_condition_exploiter)** | Offensive web | 5 TOCTOU bugs · 4 strategies · 3 detectors · 7 labs | `SHIPPED` |
-| `F-02` | **[ML Network Intrusion Detection](https://github.com/N4khlA/AI-_threat_hunting)** | Defensive ML | RF macro-F1 0.948 · LSTM AUC 0.998 · 49 tests | `SHIPPED` |
-| `F-03` | **[masa: Mobile App Security Analyzer](https://github.com/N4khlA/MobileApp_SecAnalyzer)** | Mobile AppSec | 78 rules · OWASP M1–M10 · SARIF + severity gate | `MAINTAINED` |
+<br/>
 
-<details>
-<summary><code>F-01</code> · Race Condition Exploiter <code>OFFENSIVE / WEB</code></summary>
+## `> cat ./arsenal.txt`
 
-**Thesis.** Most race-condition demos stop at a screenshot. This one is a full
-shop with five exploitable TOCTOU paths, a harness that can replay them, and
-fixes that can be toggled and benchmarked on the same load.
+<div align="center">
 
-**Evidence**
-- Five bugs: double-spend, coupon reuse, oversell, duplicate signup, reset-token reuse.
-- Four concurrency strategies: asyncio, barrier-synced threads, raw TCP and HTTP/2 multiplexing.
-- Three independent detectors: request-pattern middleware, PostgreSQL invariant triggers and byte-identical fingerprinting.
-- Fix modes include compare-and-swap, row locks, optimistic locking, serializable isolation and Redis locks — measured for exploit rate vs. latency.
+<img src="https://skillicons.dev/icons?i=python,ts,bash,linux,kali,docker,git&theme=dark&perline=7" alt="Python, TypeScript, Bash, Linux, Kali, Docker, Git"/>
+<br/><br/>
+<img src="https://skillicons.dev/icons?i=fastapi,react,postgres,redis,sqlite,tensorflow,sklearn&theme=dark&perline=7" alt="FastAPI, React, PostgreSQL, Redis, SQLite, TensorFlow, scikit-learn"/>
 
-`FastAPI` · `PostgreSQL` · `Redis` · `React / TypeScript` · `Docker`
+<br/><br/>
 
-[Repository](https://github.com/N4khlA/Race_condition_exploiter) · [Seven labs](https://github.com/N4khlA/Race_condition_exploiter/tree/main/labs) · [Field reference](https://github.com/N4khlA/Race_condition_exploiter/blob/main/docs/reference.md)
+<img src="https://img.shields.io/badge/Race_Conditions-ff4d4d?style=flat-square&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/Exploit_Dev-ff4d4d?style=flat-square&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/Intrusion_Detection-ff4d4d?style=flat-square&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/OWASP_Top_10-ff4d4d?style=flat-square&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/Mobile_Top_10-ff4d4d?style=flat-square&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/Binary_Hardening-ff4d4d?style=flat-square&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/SARIF-ff4d4d?style=flat-square&labelColor=0d1117"/>
 
-</details>
+</div>
 
-<details>
-<summary><code>F-02</code> · ML Network Intrusion Detection <code>DEFENSIVE / ML</code></summary>
+<br/>
 
-**Thesis.** An end-to-end IDS on UNSW-NB15 that reports its weak spots instead of
-hiding them behind one accuracy number.
-
-**Evidence**
-- Random Forest and a bidirectional LSTM compared on the same held-out flows, with an aligned McNemar test.
-- Leakage scan, per-attack-family recall, and a retraining pipeline that refuses to replace a model with a worse one.
-- FastAPI inference endpoint, Streamlit monitor, and 49 tests covering the pipeline, serving path and retraining guard.
-
-`scikit-learn` · `TensorFlow` · `FastAPI` · `Streamlit` · `pytest`
-
-[Repository](https://github.com/N4khlA/AI-_threat_hunting) · [Model comparison](https://github.com/N4khlA/AI-_threat_hunting/blob/main/reports/model_comparison.md) · [Limitations](https://github.com/N4khlA/AI-_threat_hunting/blob/main/docs/limitations.md)
-
-</details>
-
-<details>
-<summary><code>F-03</code> · masa: Mobile App Security Analyzer <code>MOBILE APPSEC</code></summary>
-
-**Thesis.** A mobile scanner that can fail a build, not just print a PDF.
-
-**Evidence**
-- 78 rules mapped to OWASP Mobile Top 10 2023, with 2016 compatibility mappings.
-- Hand-written parsers for binary AXML, bplist, DEX, ELF and Mach-O. No runtime dependencies.
-- SARIF 2.1.0 output, `--fail-on` severity gate, 34 tests and CI on Python 3.9–3.13.
-
-`Python stdlib` · `OWASP Mobile Top 10` · `SARIF` · `GitHub Actions`
-
-[Repository](https://github.com/N4khlA/MobileApp_SecAnalyzer) · [CI](https://github.com/N4khlA/MobileApp_SecAnalyzer/actions/workflows/ci.yml) · [Changelog](https://github.com/N4khlA/MobileApp_SecAnalyzer/blob/main/CHANGELOG.md)
-
-</details>
-
----
-
-## Tradecraft
-
-The loop I keep coming back to:
+## `> ./tradecraft --loop`
 
 ```mermaid
 flowchart LR
-    R["Recon"] --> B["Build"]
-    B --> X["Exploit"]
-    X --> D["Detect"]
-    D --> F["Fix"]
-    F --> V["Verify"]
+    R["🔎 Recon"] --> B["🏗️ Build"] --> X["⚔️ Exploit"] --> D["🚨 Detect"] --> F["🔧 Fix"] --> V["✅ Verify"]
     V -.-> R
+    style X fill:#3b0a0a,stroke:#ff4d4d,color:#ffffff
+    style D fill:#0d1117,stroke:#ff4d4d,color:#ffffff
 ```
 
-| Phase | What I actually do | Where you can see it |
-|---|---|---|
-| **Recon** | Parse formats by hand; map trust boundaries | `masa` — AXML, bplist, DEX, ELF, Mach-O |
-| **Build** | Write the vulnerable target and a repeatable harness | `F-01` — shop + 5 bugs + CLI harness |
-| **Exploit** | Race the scheduler, not the UI | `F-01` — asyncio, threads, raw TCP, HTTP/2 |
-| **Detect** | Make the exploit leave evidence | `F-01` — 3 detectors · `F-02` — ML IDS |
-| **Fix** | Change the invariant, not the timeout | `F-01` — CAS, row locks, serializable, Redis |
-| **Verify** | Tests, benchmarks, CI gates | 49 + 34 tests · SARIF `--fail-on` |
+<br/>
 
----
+## `> tail -f activity.log`
 
-## Field notes
+<div align="center">
 
-Three things the work keeps teaching me:
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=N4khlA&layout=compact&langs_count=6&hide_border=true&bg_color=0d1117&title_color=ff4d4d&text_color=c9d1d9&card_width=420" alt="Most used languages"/>
 
-> **Reproduction beats a good story.** If I can't replay it from a clean
-> checkout, I don't understand it yet.
+<br/><br/>
 
-> **A fix is a hypothesis until the exploit fails.** The interesting number is
-> not "tests pass"; it's "exploit success rate went to zero, and latency stayed
-> inside budget."
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/N4khlA/N4khlA/output/github-snake-dark.svg"/>
+  <img src="https://raw.githubusercontent.com/N4khlA/N4khlA/output/github-snake-dark.svg" width="100%" alt="Contribution graph eaten by a snake"/>
+</picture>
 
-> **Detection without a false-positive budget is decoration.** A detector that
-> fires on everything is just another alert queue.
+</div>
 
----
+<br/>
 
-## Currently
+<div align="center">
 
-- **Shipping** — `masa` 1.1: SARIF output, a `--fail-on` severity gate and CI on Python 3.9–3.13.
-- **Studying** — detection engineering, iOS internals and ML models that hold up outside a notebook.
-- **Looking for** — an internship where exploitation and detection are both in scope.
+<sub>🔐 Offensive tooling here is for authorised education and research, run in isolated labs.</sub>
 
----
+</div>
 
-## Contact
-
-[Email](mailto:ay.guerfi@esi-sba.dz?subject=Internship%20opportunity) · [LinkedIn](https://www.linkedin.com/in/guerfi-ahmed-yacine-6831b32b8/) · [Portfolio](https://n4khla.github.io) · [CV](https://n4khla.github.io/Guerfi_Ahmed_Yacine_CV.pdf) · [security.txt](https://n4khla.github.io/.well-known/security.txt)
-
-Based in Sidi Bel Abbès, Algeria. Open to internship offers, projects and hard problems.
-
-<sub>All offensive tooling is for authorised education and research, run in isolated environments. No trackers, no generated stats — this page changes when the work does.</sub>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff4d4d,45:3b0a0a,100:0d1117&height=110&section=footer" width="100%" alt=""/>
