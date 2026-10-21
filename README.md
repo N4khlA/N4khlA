@@ -1,59 +1,146 @@
-```text
-SEC-ASSESSMENT // GUERFI-A-Y                         CLASSIFICATION: PUBLIC
------------------------------------------------------------------------------
-SUBJECT      Guerfi Ahmed Yacine
-INSTITUTION  ESI Sidi Bel Abbès (ESI-SBA)
-PROGRAMME    State Engineering degree, Cyber Security + Master's (final year)
-GRADUATION   2027
-STATUS       [ AVAILABLE ]  open to internships: pentest · AppSec · SOC/detection
+<img src="assets/hero.svg" width="100%" alt="Build. Break. Prove. — security assessment report cover for Guerfi Ahmed Yacine">
+
+> **Field report.** I build the vulnerable system, exploit it, instrument the
+> detection, then prove the fix under load. The repositories below are the
+> evidence, not a skills list.
+
+`01` [Summary](#summary) · `02` [Engagements](#engagements) · `03` [Tradecraft](#tradecraft) · `04` [Field notes](#field-notes) · `05` [Currently](#currently) · `06` [Contact](#contact)
+
+---
+
+## Summary
+
+I'm a final-year cyber security engineering student at **ESI Sidi Bel Abbès**,
+graduating in **2027**. I work where offensive security, detection engineering
+and software engineering meet: race conditions, mobile attack surfaces, and ML
+detectors that have to survive real traffic.
+
+I care about claims that can be checked. Every project here ships with a harness,
+a test suite, a benchmark or a CI gate — something that can fail and prove the
+work is real.
+
+**Open to internships** in penetration testing, AppSec or SOC/detection engineering.
+
+> **Rules of engagement.** Offensive work stays in isolated labs. Datasets are
+> public or synthetic. If a claim cannot be reproduced, it does not go on this page.
+
+---
+
+## Engagements
+
+| ID | Engagement | Domain | Evidence | State |
+|---|---|---|---|---|
+| `F-01` | **[Race Condition Exploiter](https://github.com/N4khlA/Race_condition_exploiter)** | Offensive web | 5 TOCTOU bugs · 4 strategies · 3 detectors · 7 labs | `SHIPPED` |
+| `F-02` | **[ML Network Intrusion Detection](https://github.com/N4khlA/AI-_threat_hunting)** | Defensive ML | RF macro-F1 0.948 · LSTM AUC 0.998 · 49 tests | `SHIPPED` |
+| `F-03` | **[masa: Mobile App Security Analyzer](https://github.com/N4khlA/MobileApp_SecAnalyzer)** | Mobile AppSec | 78 rules · OWASP M1–M10 · SARIF + severity gate | `MAINTAINED` |
+
+<details>
+<summary><code>F-01</code> · Race Condition Exploiter <code>OFFENSIVE / WEB</code></summary>
+
+**Thesis.** Most race-condition demos stop at a screenshot. This one is a full
+shop with five exploitable TOCTOU paths, a harness that can replay them, and
+fixes that can be toggled and benchmarked on the same load.
+
+**Evidence**
+- Five bugs: double-spend, coupon reuse, oversell, duplicate signup, reset-token reuse.
+- Four concurrency strategies: asyncio, barrier-synced threads, raw TCP and HTTP/2 multiplexing.
+- Three independent detectors: request-pattern middleware, PostgreSQL invariant triggers and byte-identical fingerprinting.
+- Fix modes include compare-and-swap, row locks, optimistic locking, serializable isolation and Redis locks — measured for exploit rate vs. latency.
+
+`FastAPI` · `PostgreSQL` · `Redis` · `React / TypeScript` · `Docker`
+
+[Repository](https://github.com/N4khlA/Race_condition_exploiter) · [Seven labs](https://github.com/N4khlA/Race_condition_exploiter/tree/main/labs) · [Field reference](https://github.com/N4khlA/Race_condition_exploiter/blob/main/docs/reference.md)
+
+</details>
+
+<details>
+<summary><code>F-02</code> · ML Network Intrusion Detection <code>DEFENSIVE / ML</code></summary>
+
+**Thesis.** An end-to-end IDS on UNSW-NB15 that reports its weak spots instead of
+hiding them behind one accuracy number.
+
+**Evidence**
+- Random Forest and a bidirectional LSTM compared on the same held-out flows, with an aligned McNemar test.
+- Leakage scan, per-attack-family recall, and a retraining pipeline that refuses to replace a model with a worse one.
+- FastAPI inference endpoint, Streamlit monitor, and 49 tests covering the pipeline, serving path and retraining guard.
+
+`scikit-learn` · `TensorFlow` · `FastAPI` · `Streamlit` · `pytest`
+
+[Repository](https://github.com/N4khlA/AI-_threat_hunting) · [Model comparison](https://github.com/N4khlA/AI-_threat_hunting/blob/main/reports/model_comparison.md) · [Limitations](https://github.com/N4khlA/AI-_threat_hunting/blob/main/docs/limitations.md)
+
+</details>
+
+<details>
+<summary><code>F-03</code> · masa: Mobile App Security Analyzer <code>MOBILE APPSEC</code></summary>
+
+**Thesis.** A mobile scanner that can fail a build, not just print a PDF.
+
+**Evidence**
+- 78 rules mapped to OWASP Mobile Top 10 2023, with 2016 compatibility mappings.
+- Hand-written parsers for binary AXML, bplist, DEX, ELF and Mach-O. No runtime dependencies.
+- SARIF 2.1.0 output, `--fail-on` severity gate, 34 tests and CI on Python 3.9–3.13.
+
+`Python stdlib` · `OWASP Mobile Top 10` · `SARIF` · `GitHub Actions`
+
+[Repository](https://github.com/N4khlA/MobileApp_SecAnalyzer) · [CI](https://github.com/N4khlA/MobileApp_SecAnalyzer/actions/workflows/ci.yml) · [Changelog](https://github.com/N4khlA/MobileApp_SecAnalyzer/blob/main/CHANGELOG.md)
+
+</details>
+
+---
+
+## Tradecraft
+
+The loop I keep coming back to:
+
+```mermaid
+flowchart LR
+    R["Recon"] --> B["Build"]
+    B --> X["Exploit"]
+    X --> D["Detect"]
+    D --> F["Fix"]
+    F --> V["Verify"]
+    V -.-> R
 ```
 
-I learn security by building the vulnerable system, exploiting it, instrumenting it, and proving that the fix works.
+| Phase | What I actually do | Where you can see it |
+|---|---|---|
+| **Recon** | Parse formats by hand; map trust boundaries | `masa` — AXML, bplist, DEX, ELF, Mach-O |
+| **Build** | Write the vulnerable target and a repeatable harness | `F-01` — shop + 5 bugs + CLI harness |
+| **Exploit** | Race the scheduler, not the UI | `F-01` — asyncio, threads, raw TCP, HTTP/2 |
+| **Detect** | Make the exploit leave evidence | `F-01` — 3 detectors · `F-02` — ML IDS |
+| **Fix** | Change the invariant, not the timeout | `F-01` — CAS, row locks, serializable, Redis |
+| **Verify** | Tests, benchmarks, CI gates | 49 + 34 tests · SARIF `--fail-on` |
 
-## Findings
+---
 
-| ID | Project | Area | Evidence |
-|---|---|---|---|
-| F-01 | **[Race Condition Exploiter](https://github.com/N4khlA/Race_condition_exploiter)** | Offensive / Web | 5 TOCTOU bugs · 4 attack strategies · 3 detectors · 7 labs |
-| F-02 | **[ML Network Intrusion Detection](https://github.com/N4khlA/AI-_threat_hunting)** | Defensive / ML | RF macro-F1 0.948 · LSTM AUC 0.998 · 49 tests |
-| F-03 | **[masa: Mobile App Security Analyzer](https://github.com/N4khlA/MobileApp_SecAnalyzer)** | AppSec / Mobile | OWASP Mobile M1–M10 · APK + IPA · 0 dependencies |
+## Field notes
 
-<details>
-<summary><b>F-01 · Race Condition Exploiter</b>: details</summary>
+Three things the work keeps teaching me:
 
-A full-stack TOCTOU lab: a deliberately vulnerable shop with five real race bugs (double-spend, coupon reuse, oversell, duplicate signup, reset-token reuse). The exploit harness uses asyncio, barrier-synced threads, raw TCP sockets and HTTP/2 multiplexing. Detection comes from PostgreSQL invariant triggers (`LISTEN/NOTIFY`) and burst fingerprinting. Fixes (CAS, row locks, serializable, Redis locks) are toggleable and benchmarked for exploit rate against latency.
-`FastAPI` `PostgreSQL` `Redis` `React/TS` `Docker`
-</details>
+> **Reproduction beats a good story.** If I can't replay it from a clean
+> checkout, I don't understand it yet.
 
-<details>
-<summary><b>F-02 · ML Network Intrusion Detection</b>: details</summary>
+> **A fix is a hypothesis until the exploit fails.** The interesting number is
+> not "tests pass"; it's "exploit success rate went to zero, and latency stayed
+> inside budget."
 
-Trained on UNSW-NB15: a grid-searched Random Forest compared with a bidirectional LSTM, using a McNemar significance test. It includes a leakage scan, per-attack-family recall, a FastAPI inference endpoint, a live Streamlit monitor, and a retraining pipeline that refuses to replace the current model with a worse one.
-`scikit-learn` `TensorFlow` `FastAPI` `Streamlit` `pytest`
-</details>
+> **Detection without a false-positive budget is decoration.** A detector that
+> fires on everything is just another alert queue.
 
-<details>
-<summary><b>F-03 · masa</b>: details</summary>
+---
 
-A static scanner for Android and iOS apps, written with only the Python standard library. It has hand-written parsers for binary AXML, bplist, DEX, ELF and Mach-O, checks binary hardening (PIE, RELRO, NX), detects secrets, TrustAll managers, ATS bypasses and weak crypto, and produces HTML, Markdown and JSON reports.
-`Python stdlib` `OWASP MASVS` `ELF / Mach-O`
-</details>
+## Currently
 
-## Capability matrix
+- **Shipping** — `masa` 1.1: SARIF output, a `--fail-on` severity gate and CI on Python 3.9–3.13.
+- **Studying** — detection engineering, iOS internals and ML models that hold up outside a notebook.
+- **Looking for** — an internship where exploitation and detection are both in scope.
 
-| Recon & analysis | Exploitation | Detection | Hardening | Engineering |
-|---|---|---|---|---|
-| Binary format parsing | Race conditions / TOCTOU | ML intrusion detection | Concurrency-safe DB fixes | Python |
-| Static analysis | Custom exploit harnesses | DB invariant triggers | OWASP Mobile Top 10 | FastAPI · React · TS |
-| Traffic & flow analysis | HTTP/2 & raw-socket attacks | Request fingerprinting | ELF / Mach-O hardening | PostgreSQL · Redis |
-| Network enumeration | Web injection & auth flaws | Model drift monitoring | OWASP Top 10 (web) | Docker · pytest · Git |
+---
 
-## Disclosure channel
+## Contact
 
-[![Email](https://img.shields.io/badge/Email-ay.guerfi%40esi--sba.dz-0f0f10?style=flat-square&logo=maildotru&logoColor=white)](mailto:ay.guerfi@esi-sba.dz)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Guerfi%20Ahmed%20Yacine-d93a12?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guerfi-ahmed-yacine-6831b32b8/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-n4khla.github.io-0f0f10?style=flat-square&logo=googlechrome&logoColor=white)](https://n4khla.github.io)
+[Email](mailto:ay.guerfi@esi-sba.dz?subject=Internship%20opportunity) · [LinkedIn](https://www.linkedin.com/in/guerfi-ahmed-yacine-6831b32b8/) · [Portfolio](https://n4khla.github.io) · [CV](https://n4khla.github.io/Guerfi_Ahmed_Yacine_CV.pdf) · [security.txt](https://n4khla.github.io/.well-known/security.txt)
 
-Open to internship offers, projects and hard problems.
+Based in Sidi Bel Abbès, Algeria. Open to internship offers, projects and hard problems.
 
-<sub>All offensive tooling here is for authorised education and research, run in isolated environments.</sub>
+<sub>All offensive tooling is for authorised education and research, run in isolated environments. No trackers, no generated stats — this page changes when the work does.</sub>
