@@ -1,4 +1,15 @@
-<img src="assets/hero.svg" width="100%" alt="Light editorial security assessment cover: Build. Break. Prove. — Guerfi Ahmed Yacine">
+`SEC-ASSESSMENT // GUERFI-A-Y` · `CLASSIFICATION: PUBLIC` · `REV 2026.10`
+
+# Guerfi Ahmed Yacine
+
+**Cyber security engineering student at ESI Sidi Bel Abbès · class of 2027**
+
+| FIELD | VALUE |
+|---|---|
+| **Focus** | Offensive security · applied ML · mobile AppSec |
+| **Status** | `AVAILABLE` — internship in pentest, AppSec or SOC/detection |
+| **Base** | Sidi Bel Abbès, Algeria |
+| **Graduation** | 2027 |
 
 > **Field report.** I build the vulnerable system, exploit it, instrument the
 > detection, then prove the fix under load. The repositories below are the
@@ -18,8 +29,6 @@ detectors that have to survive real traffic.
 I care about claims that can be checked. Every project here ships with a harness,
 a test suite, a benchmark or a CI gate — something that can fail and prove the
 work is real.
-
-**Open to internships** in penetration testing, AppSec or SOC/detection engineering.
 
 > **Rules of engagement.** Offensive work stays in isolated labs. Datasets are
 > public or synthetic. If a claim cannot be reproduced, it does not go on this page.
