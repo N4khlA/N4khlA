@@ -2,7 +2,7 @@ name: Activity log
 
 on:
   schedule:
-    - cron: "17 3 * * *"
+    - cron: "17 */3 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -20,7 +20,8 @@ jobs:
       - name: Render contribution grid and languages card
         run: python3 scripts/activity.py dist
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # optional ACTIVITY_TOKEN (your own PAT) also counts private contributions
+          GITHUB_TOKEN: ${{ secrets.ACTIVITY_TOKEN || secrets.GITHUB_TOKEN }}
           GH_LOGIN: ${{ github.repository_owner }}
 
       - uses: crazy-max/ghaction-github-pages@v4
