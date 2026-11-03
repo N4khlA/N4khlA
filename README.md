@@ -108,14 +108,11 @@ flowchart LR
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=N4khlA&layout=compact&langs_count=6&hide_border=true&bg_color=0d1117&title_color=ff4d4d&text_color=c9d1d9&card_width=420" alt="Most used languages"/>
+<img src="https://raw.githubusercontent.com/N4khlA/N4khlA/output/top-langs.svg" width="420" alt="Most used languages"/>
 
 <br/><br/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/N4khlA/N4khlA/output/github-snake-dark.svg"/>
-  <img src="https://raw.githubusercontent.com/N4khlA/N4khlA/output/github-snake-dark.svg" width="100%" alt="Contribution graph eaten by a snake"/>
-</picture>
+<img src="https://raw.githubusercontent.com/N4khlA/N4khlA/output/activity-grid.svg" width="100%" alt="Contribution calendar for the last year"/>
 
 </div>
 
