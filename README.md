@@ -112,7 +112,10 @@ flowchart LR
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/N4khlA/N4khlA/output/activity-grid.svg" width="100%" alt="Contribution calendar for the last year"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/N4khlA/N4khlA/output/github-snake-dark.svg"/>
+  <img src="https://raw.githubusercontent.com/N4khlA/N4khlA/output/github-snake-dark.svg" width="100%" alt="Contribution graph eaten by a snake"/>
+</picture>
 
 </div>
 
