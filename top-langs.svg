@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="157" viewBox="0 0 420 157" role="img" aria-labelledby="t">
+<title id="t">Most used languages</title>
+<style>text{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace;fill:#c9d1d9;font-size:12px}.h{fill:#ff4d4d;font-size:16px;font-weight:700}</style>
+<rect width="100%" height="100%" rx="6" fill="#0d1117"/>
+<text class="h" x="25" y="32">Most Used Languages</text>
+<clipPath id="c"><rect x="25" y="48" width="370" height="8" rx="4"/></clipPath>
+<rect x="25" y="48" width="370" height="8" rx="4" fill="#161b22"/>
+<g clip-path="url(#c)">
+<rect x="25.0" y="48" width="184.4" height="8" fill="#ff4d4d"/>
+<rect x="208.9" y="48" width="162.7" height="8" fill="#ffa3a3"/>
+<rect x="371.1" y="48" width="11.1" height="8" fill="#c23030"/>
+<rect x="381.8" y="48" width="9.7" height="8" fill="#8b949e"/>
+<rect x="390.9" y="48" width="3.5" height="8" fill="#7a1a1a"/>
+<rect x="393.9" y="48" width="1.6" height="8" fill="#d0d7de"/>
+</g>
+<circle cx="30" cy="78" r="5" fill="#ff4d4d"/>
+<text x="41" y="82">Python <tspan fill="#8b949e">49.7%</tspan></text>
+<circle cx="215" cy="78" r="5" fill="#ffa3a3"/>
+<text x="226" y="82">TypeScript <tspan fill="#8b949e">43.8%</tspan></text>
+<circle cx="30" cy="103" r="5" fill="#c23030"/>
+<text x="41" y="107">CSS <tspan fill="#8b949e">2.9%</tspan></text>
+<circle cx="215" cy="103" r="5" fill="#8b949e"/>
+<text x="226" y="107">HTML <tspan fill="#8b949e">2.5%</tspan></text>
+<circle cx="30" cy="128" r="5" fill="#7a1a1a"/>
+<text x="41" y="132">JavaScript <tspan fill="#8b949e">0.8%</tspan></text>
+<circle cx="215" cy="128" r="5" fill="#d0d7de"/>
+<text x="226" y="132">Dockerfile <tspan fill="#8b949e">0.3%</tspan></text>
+</svg>
